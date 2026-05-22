@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Privacy Policy – FinCalc Pro</title>
+  <meta name="description" content="Privacy Policy for FinCalc Pro. Learn how we protect your data and respect your privacy."/>
+  <meta name="author" content="FinCalc Pro"/>
+  <link rel="canonical" href="https://fincalc-26a.pages.dev/privacy-policy.html"/>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5772985790437547" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary: #ec4899;
+      --accent: #06d6a0;
+      --success: #10b981;
+      --danger: #ef4444;
+      --dark-bg: #0f172a;
+      --dark-surface: #1e293b;
+      --dark-card: #334155;
+      --dark-border: #475569;
+      --dark-text: #f1f5f9;
+      --dark-muted: #94a3b8;
+      --light-bg: #f8fafc;
+      --light-surface: #ffffff;
+      --light-card: #f1f5f9;
+      --light-border: #e2e8f0;
+      --light-text: #0f172a;
+      --light-muted: #64748b;
+    }
+
+    html {scroll-behavior: smooth;}
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--dark-bg);
+      color: var(--dark-text);
+      overflow-x: hidden;
+      line-height: 1.6;
+      letter-spacing: 0.3px;
+    }
+
+    body.light-mode {
+      background: var(--light-bg);
+      color: var(--light-text);
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--dark-border);
+      padding: 16px 5%;
+    }
+
+    body.light-mode header {
+      background: rgba(248, 250, 252, 0.8);
+      border-bottom-color: var(--light-border);
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+      font-family: 'Space Mono', monospace;
+      text-decoration: none;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .theme-toggle {
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-radius: 12px;
+      background: var(--dark-card);
+      color: var(--dark-text);
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body.light-mode .theme-toggle {
+      background: var(--light-card);
+      color: var(--light-text);
+    }
+
+    .theme-toggle:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 5%;
+    }
+
+    .page-header {
+      margin-bottom: 48px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(236, 72, 153, 0.2));
+      border: 1px solid var(--danger);
+      color: var(--danger);
+      padding: 8px 18px;
+      border-radius: 24px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -1px;
+    }
+
+    .updated {
+      color: var(--dark-muted);
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+    }
+
+    body.light-mode .updated {
+      color: var(--light-muted);
+    }
+
+    /* SECTIONS */
+    .section {
+      background: var(--dark-surface);
+      border: 1px solid var(--dark-border);
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 20px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    body.light-mode .section {
+      background: var(--light-surface);
+      border-color: var(--light-border);
+    }
+
+    .section h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section p, .section li {
+      font-size: 0.95rem;
+      color: var(--dark-muted);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    body.light-mode .section p,
+    body.light-mode .section li {
+      color: var(--light-muted);
+    }
+
+    .section ul {
+      margin-left: 24px;
+    }
+
+    .section a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .section a:hover {
+      color: var(--secondary);
+    }
+
+    /* TABLE OF CONTENTS */
+    .toc {
+      background: var(--dark-card);
+      border: 1px solid var(--dark-border);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 32px;
+    }
+
+    body.light-mode .toc {
+      background: var(--light-card);
+      border-color: var(--light-border);
+    }
+
+    .toc h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--dark-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    body.light-mode .toc h3 {
+      color: var(--light-muted);
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin-bottom: 8px;
+    }
+
+    .toc a {
+      font-size: 0.9rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+      border-left: 4px solid var(--success);
+      border-radius: 8px;
+      padding: 16px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--dark-muted);
+    }
+
+    body.light-mode .highlight {
+      color: var(--light-muted);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark-surface);
+      border-top: 1px solid var(--dark-border);
+      padding: 48px 5%;
+      text-align: center;
+      color: var(--dark-muted);
+      font-size: 0.85rem;
+      margin-top: 60px;
+    }
+
+    body.light-mode footer {
+      background: var(--light-surface);
+      border-top-color: var(--light-border);
+      color: var(--light-muted);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: var(--secondary);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      h1 {font-size: 1.8rem;}
+      .container {padding: 40px 5%;}
+      .section {padding: 20px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-flex">
+    <a href="index.html" class="logo">FinCalc Pro</a>
+    <div class="header-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light mode">🌙</button>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-header">
+    <div class="badge">🔒 Legal</div>
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: January 2025 · Effective immediately</div>
+  </div>
+
+  <div class="toc">
+    <h3>Quick Navigation</h3>
+    <ol>
+      <li><a href="#info">Information We Collect</a></li>
+      <li><a href="#usage">How We Use Information</a></li>
+      <li><a href="#cookies">Cookies & Tracking</a></li>
+      <li><a href="#adsense">Google AdSense</a></li>
+      <li><a href="#third">Third-Party Services</a></li>
+      <li><a href="#storage">Data Storage</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#disclaimer">Disclaimer</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <div class="section" id="info">
+    <h2>1. Information We Collect</h2>
+    <p>We collect minimal information to operate and improve our service:</p>
+    <ul>
+      <li><strong>Usage Data:</strong> Pages visited, time spent, browser type, and country (via analytics)</li>
+      <li><strong>Calculator Inputs:</strong> Numbers you enter are processed in your browser ONLY — never sent to our servers</li>
+      <li><strong>Cookies:</strong> Small text files for analytics and advertising (see Section 3)</li>
+    </ul>
+    <div class="highlight">
+      ✅ We do NOT collect: name, email, phone, address, or any personally identifiable information unless you contact us directly.
+    </div>
+  </div>
+
+  <div class="section" id="usage">
+    <h2>2. How We Use Information</h2>
+    <ul>
+      <li>To operate and maintain FinCalc Pro</li>
+      <li>To understand how users interact with our tools and improve them</li>
+      <li>To serve relevant advertisements (Google AdSense)</li>
+      <li>To comply with legal obligations</li>
+    </ul>
+  </div>
+
+  <div class="section" id="cookies">
+    <h2>3. Cookies & Tracking Technologies</h2>
+    <p>We use cookies for:</p>
+    <ul>
+      <li><strong>Analytics:</strong> Understanding traffic patterns and user behavior (e.g., Google Analytics)</li>
+      <li><strong>Advertising:</strong> Serving personalized ads via Google AdSense</li>
+      <li><strong>Preferences:</strong> Remembering your dark/light mode choice and other settings</li>
+    </ul>
+    <p style="margin-top: 16px;">You can disable cookies in your browser settings at any time. Note: Disabling cookies may affect how our site functions.</p>
+  </div>
+
+  <div class="section" id="adsense">
+    <h2>4. Google AdSense & Advertising</h2>
+    <p>We use <strong>Google AdSense</strong> to display advertisements. Google may use cookies and web beacons to serve ads based on your browsing history.</p>
+    <ul>
+      <li>Google may use data from our site and other sites to serve targeted ads</li>
+      <li>You can opt out of personalized advertising: <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a></li>
+      <li>You can also use the <a href="http://www.aboutads.info/choices/" target="_blank">Network Advertising Initiative opt-out</a></li>
+    </ul>
+    <p style="margin-top: 16px;">For more information, see: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">How Google uses data when you use partner sites</a></p>
+  </div>
+
+  <div class="section" id="third">
+    <h2>5. Third-Party Services</h2>
+    <p>Our site uses the following third-party services, each with their own privacy policies:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google Analytics</a> – Website traffic analysis</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google AdSense</a> – Advertising services</li>
+      <li><a href="https://fonts.google.com" target="_blank">Google Fonts</a> – Typography</li>
+      <li><a href="https://cdnjs.com" target="_blank">CDN.js</a> – Content delivery and libraries</li>
+    </ul>
+    <p style="margin-top: 16px;">We are not responsible for these third parties' privacy practices. We recommend reviewing their policies.</p>
+  </div>
+
+  <div class="section" id="storage">
+    <h2>6. Your Data & No Storage Policy</h2>
+    <p>All financial calculations (EMI, SIP, FD, PPF, tax, etc.) happen <strong>entirely in your browser using JavaScript</strong>. We:</p>
+    <ul>
+      <li>Do NOT transmit your financial inputs to any server</li>
+      <li>Do NOT store your salary, loan amounts, or investment figures</li>
+      <li>Do NOT log your calculated results</li>
+      <li>Do NOT have access to any of your financial data</li>
+    </ul>
+    <div class="highlight">
+      🔒 Your financial information is 100% private and stays on your device only.
+    </div>
+  </div>
+
+  <div class="section" id="children">
+    <h2>7. Children's Privacy</h2>
+    <p>FinCalc Pro is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us immediately and we will delete it.</p>
+  </div>
+
+  <div class="section" id="disclaimer">
+    <h2>8. Disclaimer & Legal Notice</h2>
+    <p>The financial calculators on FinCalc Pro are provided <strong>for informational and educational purposes only</strong>. Results are estimates based on standard financial formulas.</p>
+    <ul>
+      <li>Results should NOT be considered as financial, investment, or tax advice</li>
+      <li>Actual EMI, returns, taxes, and other amounts may differ based on your specific circumstances</li>
+      <li><strong>Always consult a certified financial advisor or chartered accountant</strong> before making financial decisions</li>
+      <li>FinCalc Pro is NOT responsible for any financial decisions made based on our calculations</li>
+      <li>We provide no warranties or guarantees regarding calculator accuracy</li>
+    </ul>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>9. Contact Us</h2>
+    <p>Questions about this Privacy Policy or our practices? We'd love to hear from you:</p>
+    <ul style="margin-top: 16px;">
+      <li>📧 <strong>Email:</strong> <a href="mailto:contact@fincalc.in">contact@fincalc.in</a></li>
+      <li>🌐 <strong>Website:</strong> <a href="index.html">fincalc-26a.pages.dev</a></li>
+    </ul>
+    <p style="margin-top: 20px;">We may update this Privacy Policy periodically. The "Last updated" date above indicates the most recent changes.</p>
+  </div>
+</div>
+
+<footer>
+  <p style="margin-bottom: 12px;">© 2024 FinCalc Pro · <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="privacy-policy.html">Privacy</a></p>
+  <p>Your privacy is important to us. We respect your data.</p>
+</footer>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle('light-mode');
+  const btn = document.querySelector('.theme-toggle');
+  btn.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+  localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+}
+
+if (localStorage.getItem('theme') === 'light') {
+  document.body.classList.add('light-mode');
+  document.querySelector('.theme-toggle').textContent = '☀️';
+}
+</script>
+
+</body>
+</html>
